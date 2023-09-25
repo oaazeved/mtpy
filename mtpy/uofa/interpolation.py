@@ -81,10 +81,10 @@ def interpolate_lemi_coils_response(freq, instrument_response):
     imagval2 = instrument_response[closest_lower + 1, 2]
 
     # for linear interpolation in abs/angle instead of real/imag:
-    absval1 = np.abs(np.complex(realval1, imagval1))
-    phival1 = np.angle(np.complex(realval1, imagval1)) / np.pi * 180
-    absval2 = np.abs(np.complex(realval2, imagval2))
-    phival2 = np.angle(np.complex(realval2, imagval2)) / np.pi * 180
+    absval1 = np.abs(complex(realval1, imagval1))
+    phival1 = np.angle(complex(realval1, imagval1)) / np.pi * 180
+    absval2 = np.abs(complex(realval2, imagval2))
+    phival2 = np.angle(complex(realval2, imagval2)) / np.pi * 180
 
     # interpolate real and imaginary part independently in log-space:
     logfreq1 = np.log(instrfreq1)
@@ -128,6 +128,6 @@ def interpolate_lemi_coils_response(freq, instrument_response):
         interpval_real = weight * realval1 + (1 - weight) * realval2
         interpval_imag = weight * imagval1 + (1 - weight) * imagval2
 
-    interpolated_value = np.complex(interpval_real, interpval_imag)
+    interpolated_value = complex(interpval_real, interpval_imag)
 
     return interpolated_value

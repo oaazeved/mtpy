@@ -570,10 +570,10 @@ import mtpy.modeling.ModEM        >>> import mtpy.modeling.modem as modem
                        ('east', np.float),
                        ('north', np.float),
                        ('zone', '|S4'),
-                       ('z', (np.complex, self._z_shape)),
+                       ('z', (complex, self._z_shape)),
                        ('z_err', (np.float, self._z_shape)),
                        ('z_inv_err', (np.float, self._z_shape)),
-                       ('tip', (np.complex, self._t_shape)),
+                       ('tip', (complex, self._t_shape)),
                        ('tip_err', (np.float, self._t_shape)),
                        ('tip_inv_err', (np.float, self._t_shape))]
         
@@ -630,10 +630,10 @@ import mtpy.modeling.ModEM        >>> import mtpy.modeling.modem as modem
                        ('east', np.float),
                        ('north', np.float),
                        ('zone', '|S4'),
-                       ('z', (np.complex, self._z_shape)),
+                       ('z', (complex, self._z_shape)),
                        ('z_err', (np.float, self._z_shape)),
                        ('z_inv_err', (np.float, self._z_shape)),
-                       ('tip', (np.complex, self._t_shape)),
+                       ('tip', (complex, self._t_shape)),
                        ('tip_err', (np.float, self._t_shape)),
                        ('tip_inv_err', (np.float, self._t_shape))]
                        
@@ -1288,9 +1288,9 @@ import mtpy.modeling.ModEM                >>> import mtpy.modeling.modem as mode
         data_dtype = [('station', '|S10'),
                       ('east', np.float),
                       ('north', np.float),
-                      ('z_data', (np.complex, z_shape)),
-                      ('z_data_err', (np.complex, z_shape)),
-                      ('z_err_map', (np.complex, z_shape))]
+                      ('z_data', (complex, z_shape)),
+                      ('z_data_err', (complex, z_shape)),
+                      ('z_err_map', (complex, z_shape))]
         ws_data.data = np.zeros(self.data_array['station'].size, 
                                 dtype=data_dtype)
         ws_data.data['station'][:] = self.data_array['station']

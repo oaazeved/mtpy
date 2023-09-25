@@ -69,7 +69,7 @@ def correct_for_instrument_response(data, samplingrate, responsedata):
     data_freqs = np.fft.fftfreq(len(bp_data), 1. / samplingrate)
 
     # and the same for the instrument
-    instr_spectrum = responsedata[:, 1] + np.complex(0, 1) * responsedata[:, 2]
+    instr_spectrum = responsedata[:, 1] + complex(0, 1) * responsedata[:, 2]
     instr_freqs = responsedata[:, 0]
 
     lo_mags = []

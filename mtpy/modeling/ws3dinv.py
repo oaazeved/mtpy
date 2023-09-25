@@ -270,9 +270,9 @@ class WSData(object):
         data_dtype = [('station', '|U10'),
                       ('east', np.float),
                       ('north', np.float),
-                      ('z_data', (np.complex, z_shape)),
-                      ('z_data_err', (np.complex, z_shape)),
-                      ('z_err_map', (np.complex, z_shape))]
+                      ('z_data', (complex, z_shape)),
+                      ('z_data_err', (complex, z_shape)),
+                      ('z_err_map', (complex, z_shape))]
         self.data = np.zeros(n_stations, dtype=data_dtype)
 
         #------get station locations-------------------------------------------
@@ -533,9 +533,9 @@ class WSData(object):
         data_dtype = [('station', '|U10'),
                       ('east', np.float),
                       ('north', np.float),
-                      ('z_data', (np.complex, z_shape)),
-                      ('z_data_err', (np.complex, z_shape)),
-                      ('z_err_map', (np.complex, z_shape))]
+                      ('z_data', (complex, z_shape)),
+                      ('z_data_err', (complex, z_shape)),
+                      ('z_err_map', (complex, z_shape))]
         self.data = np.zeros(n_stations, dtype=data_dtype)
 
         findlist = []
@@ -2789,8 +2789,8 @@ class WSResponse(object):
         resp_dtype = [('station', '|U10'),
                       ('east', np.float),
                       ('north', np.float),
-                      ('z_resp', (np.complex, z_shape)),
-                      ('z_resp_err', (np.complex, z_shape))]
+                      ('z_resp', (complex, z_shape)),
+                      ('z_resp_err', (complex, z_shape))]
         self.resp = np.zeros(n_stations, dtype=resp_dtype)
 
         findlist = []

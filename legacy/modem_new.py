@@ -323,10 +323,10 @@ import mtpy.modeling.ModEM
                        ('east', np.float),
                        ('north', np.float),
                        ('zone', '|S4'),
-                       ('z', (np.complex, self._z_shape)),
-                       ('z_err', (np.complex, self._z_shape)),
-                       ('tip', (np.complex, self._t_shape)),
-                       ('tip_err', (np.complex, self._t_shape))]
+                       ('z', (complex, self._z_shape)),
+                       ('z_err', (complex, self._z_shape)),
+                       ('tip', (complex, self._t_shape)),
+                       ('tip_err', (complex, self._t_shape))]
         
         self.inv_mode_dict = {'1':['Full_Impedance', 'Full_Vertical_Components'],
                               '2':['Full_Impedance'],
@@ -372,10 +372,10 @@ import mtpy.modeling.ModEM
                        ('east', np.float),
                        ('north', np.float),
                        ('zone', '|S4'),
-                       ('z', (np.complex, self._z_shape)),
-                       ('z_err', (np.complex, self._z_shape)),
-                       ('tip', (np.complex, self._t_shape)),
-                       ('tip_err', (np.complex, self._t_shape))]
+                       ('z', (complex, self._z_shape)),
+                       ('z_err', (complex, self._z_shape)),
+                       ('tip', (complex, self._t_shape)),
+                       ('tip_err', (complex, self._t_shape))]
                        
     def _set_header_string(self):
         """

@@ -1357,7 +1357,7 @@ def readDataFile(datafn, sitesfn=None, units='mv'):
                 break
     # make some empty array to put stuff into
     period = np.zeros(nf)
-    zarr = np.zeros((ns, nf, 2, 2), dtype=np.complex)
+    zarr = np.zeros((ns, nf, 2, 2), dtype=complex)
     zerr = np.zeros_like(zarr)
     zerrmap = np.zeros_like(zarr)
 

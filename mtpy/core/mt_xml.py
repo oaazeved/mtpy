@@ -1034,12 +1034,12 @@ class MT_XML(XML_Config):
         # set Z and Tipper
         nf = int(self.Data.attr['count'])
         period = np.zeros(nf, dtype=np.float)
-        z = np.zeros((nf, 2, 2), dtype=np.complex)
+        z = np.zeros((nf, 2, 2), dtype=complex)
         z_err = np.zeros((nf, 2, 2), dtype=np.float)
         
         self._Z = mtz.Z(z_array=z, z_err_array=z_err, freq=period)
-        self._Z.z_invsigcov =  np.zeros((nf, 2, 2), dtype=np.complex)
-        self._Z.z_residcov = np.zeros((nf, 2, 2), dtype=np.complex)
+        self._Z.z_invsigcov =  np.zeros((nf, 2, 2), dtype=complex)
+        self._Z.z_residcov = np.zeros((nf, 2, 2), dtype=complex)
         
         input_dict = {'hx': 0, 'hy': 1, 'ex': 0, 'ey': 1}
         output_dict = input_dict
@@ -1095,12 +1095,12 @@ class MT_XML(XML_Config):
                 p_count += 1
                 
         # Fill Tipper
-        t = np.zeros((nf, 1, 2), dtype=np.complex)
+        t = np.zeros((nf, 1, 2), dtype=complex)
         t_err = np.zeros((nf, 1, 2), dtype=np.float) 
         
         self._Tipper = mtz.Tipper(tipper_array=t, tipper_err_array=t_err, freq=period)
-        self._Tipper.tipper_invsigcov = np.zeros((nf, 2, 2), dtype=np.complex)
-        self._Tipper.tipper_residcov = np.zeros((nf, 1, 1), dtype=np.complex)
+        self._Tipper.tipper_invsigcov = np.zeros((nf, 2, 2), dtype=complex)
+        self._Tipper.tipper_residcov = np.zeros((nf, 1, 1), dtype=complex)
         
         input_dict = {'hz':0, 'hx': 0, 'hy': 1}
         output_dict = {'hz':0, 'hx':0, 'hy':1}

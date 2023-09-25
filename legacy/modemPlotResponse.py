@@ -130,7 +130,7 @@ output:
         except:
             continue
 
-        data[idx_comp] = np.complex(float(line[8]), float(line[9]))
+        data[idx_comp] = complex(float(line[8]), float(line[9]))
         error[idx_comp] = float(line[10])
         datalist[idx_period] = data
         errorlist[idx_period] = error
@@ -184,7 +184,7 @@ output:
         except:
             continue
 
-        response[idx_comp] = np.complex(float(line[8]), float(line[9]))
+        response[idx_comp] = complex(float(line[8]), float(line[9]))
         responselist[idx_period] = response
 
         # print 'response:',idx_period,

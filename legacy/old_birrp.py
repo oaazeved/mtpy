@@ -1871,11 +1871,11 @@ def convert2edi_incl_instrument_correction(stationname, in_dir,
 
             #if it coincides with the highest frequency/last entry:
             if freq == instr_resp[-1,0]:
-                correction_factor = np.complex(instr_resp[-1,1],instr_resp[-1,2])
+                correction_factor = complex(instr_resp[-1,1],instr_resp[-1,2])
     
             #if it coincides with the lowest frequency/first entry:
             elif freq == instr_resp[0,0]:
-                correction_factor = np.complex(instr_resp[0,1],instr_resp[0,2])
+                correction_factor = complex(instr_resp[0,1],instr_resp[0,2])
     
             else:
 
@@ -1884,7 +1884,7 @@ def convert2edi_incl_instrument_correction(stationname, in_dir,
             
             #finally correct Z for the instrument influence by multiplying with the instrument response value: 
             for i in range(4):
-                zentry = np.complex(Z_array[idx_f,0,i], Z_array[idx_f,1,i] )
+                zentry = complex(Z_array[idx_f,0,i], Z_array[idx_f,1,i] )
                 corrected = zentry * correction_factor 
                 Z_array[idx_f,0,i] = np.real(corrected)
                 Z_array[idx_f,1,i] = np.imag(corrected)
@@ -2805,10 +2805,10 @@ class JFile(object):
         num_per = len(all_periods)
         
         # fill arrays using the period key from all_periods
-        z_arr = np.zeros((num_per, 2, 2), dtype=np.complex)
+        z_arr = np.zeros((num_per, 2, 2), dtype=complex)
         z_err_arr = np.zeros((num_per, 2, 2), dtype=np.float)
         
-        t_arr = np.zeros((num_per, 1, 2), dtype=np.complex)
+        t_arr = np.zeros((num_per, 1, 2), dtype=complex)
         t_err_arr = np.zeros((num_per, 1, 2), dtype=np.float)
         
         for p_index, per in enumerate(all_periods):

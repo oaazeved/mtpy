@@ -418,11 +418,11 @@ class Edi(object):
                         # the order <B,A*>...
                         # this is achieved by complex conjugation of the
                         # original entries
-                        s_arr[ii, jj] = np.complex(spectra_arr[jj, ii],
+                        s_arr[ii, jj] = complex(spectra_arr[jj, ii],
                                                    -spectra_arr[ii, jj])
                         # keep complex conjugated entries in the lower
                         # triangular matrix:
-                        s_arr[jj, ii] = np.complex(spectra_arr[jj, ii],
+                        s_arr[jj, ii] = complex(spectra_arr[jj, ii],
                                                    spectra_arr[ii, jj])
 
             # use formulas from Bahr/Simpson to convert the Spectra into Z

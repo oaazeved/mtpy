@@ -286,10 +286,10 @@ class JFile(object):
         num_per = len(all_periods)
         
         # fill arrays using the period key from all_periods
-        z_arr = np.zeros((num_per, 2, 2), dtype=np.complex)
+        z_arr = np.zeros((num_per, 2, 2), dtype=complex)
         z_err_arr = np.zeros((num_per, 2, 2), dtype=np.float)
         
-        t_arr = np.zeros((num_per, 1, 2), dtype=np.complex)
+        t_arr = np.zeros((num_per, 1, 2), dtype=complex)
         t_err_arr = np.zeros((num_per, 1, 2), dtype=np.float)
         
         for p_index, per in enumerate(all_periods):

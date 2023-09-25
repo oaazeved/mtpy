@@ -364,11 +364,17 @@ def z_error2r_phi_error(z_real, z_imag, error):
         error = absolute error in z (real number or array)
     
     """
-        
+
     z_amp = np.abs(z_real + 1j*z_imag)
 
+    # print('z_amp=')
+    # print(z_amp)
+    # print('error=')
+    # print(error)
+
     z_rel_err = error/z_amp
-    
+
+
     res_rel_err = 2.*z_rel_err
     
     #if the relative error of the amplitude is >=100% that means that the relative 

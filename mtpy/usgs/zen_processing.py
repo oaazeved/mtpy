@@ -1154,9 +1154,9 @@ class Z3D2EDI(object):
 
         data_arr = np.zeros(100,
                             dtype=[('freq', np.float),
-                                   ('z', (np.complex, (2, 2))),
+                                   ('z', (complex, (2, 2))),
                                    ('z_err', (np.float, (2, 2))),
-                                   ('tipper', (np.complex, (2, 2))),
+                                   ('tipper', (complex, (2, 2))),
                                    ('tipper_err', (np.float, (2, 2)))])
 
         count = 0

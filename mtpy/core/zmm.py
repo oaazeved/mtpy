@@ -187,19 +187,19 @@ class ZMM(ZMMHeader):
         self.period = np.zeros(self.num_freq)
         self.transfer_functions = np.zeros((self.num_freq, 
                                             self.num_channels - 2, 2),
-                                           dtype=np.complex64)
+                                           dtype=complex64)
 
         # residual covariance -- square matrix with dimension as number of
         # predicted channels
         self.sigma_e = np.zeros((self.num_freq, 
                                  self.num_channels- 2, self.num_channels - 2),
-                                dtype=np.complex64)
+                                dtype=complex64)
 
         # inverse coherent signal power -- square matrix, with dimension as the
         #    number of predictor channels
         # since EMTF and this code assume N predictors is 2,
         #    this dimension is hard-coded
-        self.sigma_s = np.zeros((self.num_freq, 2, 2), dtype=np.complex64)
+        self.sigma_s = np.zeros((self.num_freq, 2, 2), dtype=complex64)
                   
     def read_zmm_file(self, z_fn=None):
         """
@@ -372,7 +372,7 @@ class ZMM(ZMMHeader):
         rotated_sigma_e = np.matmul(v, np.matmul(self.sigma_e, v.T))
 
         # now pull out the impedance tensor
-        z = np.zeros((self.num_freq, 2, 2), dtype=np.complex64)
+        z = np.zeros((self.num_freq, 2, 2), dtype=complex64)
         z[:, 0, 0] = rotated_transfer_functions[:, ex_index-2, hx_index]   # Zxx
         z[:, 0, 1] = rotated_transfer_functions[:, ex_index-2, hy_index]   # Zxy
         z[:, 1, 0] = rotated_transfer_functions[:, ey_index-2, hx_index]   # Zyx
@@ -429,7 +429,7 @@ class ZMM(ZMMHeader):
         rotated_sigma_e = np.matmul(v, np.matmul(self.sigma_e, v.T))
 
         # now pull out tipper information
-        tipper = np.zeros((self.num_freq, 2), dtype=np.complex64)
+        tipper = np.zeros((self.num_freq, 2), dtype=complex64)
         tipper[:, 0] = rotated_transfer_functions[:, hz_index-2, hx_index]   # Tx
         tipper[:, 1] = rotated_transfer_functions[:, hz_index-2, hy_index]   # Ty
 

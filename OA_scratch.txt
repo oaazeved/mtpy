@@ -1,15 +1,36 @@
-'P=NIC04_R=NIC12_(H)_Workbench_1.edi', 'P=NIC18_R=NIC12_(H)_Workbench_1.edi', 
-'P=NIC36_R=NIC16_(H)_Workbench_1.edi', 'P=NIC06_R=NIC54_(H)_Workbench_1.edi', 
-'P=NIC22_R=NIC14_(H)_Workbench_1.edi', 'P=NIC37_R=NIC36_(H)_Workbench_1.edi', 
-'P=NIC08_R=NIC02_(H)_Workbench_1.edi', 'P=NIC23_R=NIC61_(H)_Workbench_1.edi', 
-'P=NIC39_R=NIC04_(H)_Workbench_1.edi', 'P=NIC10_R=NIC15_(H)_Workbench_1.edi', 
-'P=NIC25_2_R=NIC04_(H)_Workbench_1.edi', 'P=NIC40_R=NIC26_(H)_Workbench_1.edi', 
-'P=NIC11_R=NIC04_(H)_Workbench_1.edi', 'P=NIC26_R=NIC23_(H)_Workbench_1.edi', 
-'P=NIC50_R=NIC51_(H)_Workbench_1.edi', 'P=NIC12_R=NIC04_(H)_Workbench_1.edi', 
-'P=NIC28_R=NIC14_(H)_Workbench_1.edi', 'P=NIC51_R=NIC50_(H)_Workbench_1.edi', 
-'P=NIC13_R=NIC09_(H)_Workbench_1.edi', 'P=NIC29_R=NIC23_(H)_Workbench_1.edi', 
-'P=NIC52_R=NIC23_(H)_Workbench_1.edi', 'P=NIC14_R=NIC09_(H)_Workbench_1.edi', 
-'P=NIC30_R=NIC36_(H)_Workbench_1.edi', 'P=NIC53_R=NIC06_(H)_Workbench_1.edi', 
-'P=NIC16_R=NIC36_(H)_Workbench_1.edi', 'P=NIC32_R=NIC23_(H)_Workbench_1.edi', 
-'P=NIC54_R=NIC53_(H)_Workbench_1.edi', 'P=NIC17_R=NIC52_(H)_Workbench_1.edi', 
-'P=NIC35_R=NIC16_(H)_Workbench_1.edi', 'P=NIC61_R=NIC23_(H)_Workbench_1.edi'
+{'_logging': <Logger MT (WARNING)>
+'Site': <mtpy.core.mt.Site object at 0x102fd3290>
+'FieldNotes': <mtpy.core.mt.FieldNotes object at 0x102fd32d0>
+'Provenance': <mtpy.core.mt.Provenance object at 0x102fd3350>
+'Notes': <mtpy.core.edi.Information object at 0x132721190>
+'Processing': <mtpy.core.mt.Processing object at 0x133d13b50>
+'Copyright': <mtpy.core.mt.Copyright object at 0x13489d2d0>
+'_Z': <mtpy.core.z.Z object at 0x13489d550>
+'_Tipper': <mtpy.core.z.Tipper object at 0x13489d5d0>
+'_rotation_angle': 0
+'save_dir': '/Users/oazevedo3/Documents/LIGERA/PROJ_4_2nd_round_exports_Compact'
+'original_file_type': None
+'_edi_obj': <mtpy.core.edi.Edi object at 0x133d91f50>
+'_fn': '/Users/oazevedo3/Documents/LIGERA/PROJ_4_2nd_round_exports_Compact/P=NIC04_R=NIC12_(H)_Workbench_1.edi'}
+
+{'_logging': <Logger MT (WARNING)>
+'Site': <mtpy.core.mt.Site object at 0x10568f050>
+'FieldNotes': <mtpy.core.mt.FieldNotes object at 0x10568f110>
+'Provenance': <mtpy.core.mt.Provenance object at 0x10568f0d0>
+'Notes': <mtpy.core.edi.Information object at 0x138eed090>
+'Processing': <mtpy.core.mt.Processing object at 0x13e09d550>
+'Copyright': <mtpy.core.mt.Copyright object at 0x13e09d710>
+'_Z': <mtpy.core.z.Z object at 0x133271ed0>
+'_Tipper': <mtpy.core.z.Tipper object at 0x13e09da90>
+'_rotation_angle': 0
+'save_dir': '/Users/oazevedo3/Documents/GitHub/mtpy/examples/data/edi_files_2'
+'original_file_type': None
+'_edi_obj': <mtpy.core.edi.Edi object at 0x13e09d910>
+'_fn': '/Users/oazevedo3/Documents/GitHub/mtpy/examples/data/edi_files_2/Synth00.edi'}
+
+
+
+
+
+
+

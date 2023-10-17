@@ -14,7 +14,7 @@ import os
 import sys
 import webbrowser
 
-import sip
+import qtpy.sip as sip
 from qtpy import QtCore
 from qtpy.QtWidgets import QMainWindow, QWidget, qApp, QMessageBox, QFileDialog, QDialog, QWizard, QMdiArea, QAction, \
     QMdiSubWindow, QApplication
